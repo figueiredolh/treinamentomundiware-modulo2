@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -169,6 +170,7 @@
 
             <div class="col-4 px-1">
                 <!-- <a href="#"> -->
+                <article>
                 <div class="row">
                     <div class="card-group col-5 pr-0">
                         <div class="card borda-0" style="border: none;">
@@ -190,6 +192,7 @@
                     </div>
                 </div>
                 <!-- </a> -->
+            </article>
             </div>
 
             
@@ -218,22 +221,29 @@
                     <div class="card borda-0">
                         <img class="card-img-top" src="./img/coronavirus.png" alt="">
                         <div class="card-body p-0">
-                            <div class="manchete p-2 pr-3" style="border-top: none;">
+                            <div class="manchete p-2 pr-3" style="border: none;">
                                 <a class="link" href="#" title="En vivo. Coronavirus. Los investigadores descubren cuál es el síntoma más común">
                                     <h3><span class="titulo">En vivo.</span> Coronavirus | Los investigadores descubren cuál es el síntoma más común</h3>
                                 </a>
                                 <p class="subtitulo">ESTHER MUCIENTE | Madrid</p>
 
-                                <section class="secao">
+                                <!-- <section class="secao">
                                     <a href="#">
                                         <p><span class="titulosecao">Covid.</span> Sanidad informa de 12.228 contagios y 537
                                             muertos
                                         </p>
                                     </a>
-                                </section>
+                                </section> -->
                             </div>
                         </div>
                     </div>
+                    <section class="secao manchete px-2" style="height: 60px; border-top:none;">
+                        <a href="#">
+                            <p><span class="titulosecao">Covid.</span> Sanidad informa de 12.228 contagios y 537
+                                muertos
+                            </p>
+                        </a>
+                    </section>
                 </article>
             </div>
 
@@ -242,23 +252,30 @@
                     <div class="card borda-0">
                         <img class="card-img-top" src="./img/mccloskey.png" alt="">
                         <div class="card-body p-0">
-                            <div class="manchete p-2 pr-4" style="border-top: none;">
+                            <div class="manchete p-2 pr-3" style="border: none;">
                                 <a class="link" href="#" title="Deirdre McCloskey. Entrego un tercio de mis ingresos en impuestos. Eso me hace dos tercios libre?">
                                     <h3><span class="titulo">Deirdre McCloskey.</span> "Entrego un tercio de mis ingresos en
                                         impuestos. Eso me hace dos tercios libre?"</h3>
                                 </a>
                                 <p class="subtitulo">| PABLO R. SUANZES | Bruselas</p>
 
-                                <section class="secao">
+                                <!-- <section class="secao">
                                     <a href="#">
                                         <p><span class="titulosecao">Applebaum.</span> "Algunos gobiernos caerán por el
                                             coronavirus"
                                         </p>
                                     </a>
-                                </section>
+                                </section> -->
                             </div>
                         </div>
                     </div>
+                    <section class="secao manchete px-2" style="height: 62px; border-top:none;">
+                        <a href="#">
+                            <p><span class="titulosecao">Applebaum.</span> "Algunos gobiernos caerán por el
+                                coronavirus"
+                            </p>
+                        </a>
+                    </section>
                 </article>
             </div>
         </div>
@@ -393,16 +410,16 @@
         </div>
     </div>
 
-    <!-- Carrosel -->
+    <!-- Carrossel -->
 
     <div class="container p-2">
         <h4>Deportes</h4>
         <div class="row p-3">
             <div class="bgdeportes coluna1 col-1" style="border-right: 3px solid #ccc;">
-                <label for="resultados">
-                    <p>Resultados:</p>
+                <label for="resultados" style="font-weight: bold; font-size: 14px;" class="mt-4">
+                    Resultados:
                 </label>
-                <select name="" id="resultados">
+                <select name="resultados" id="resultados">
                     <option value="0">Todos</option>
                     <option value="1">Champions League</option>
                 </select>
@@ -510,32 +527,33 @@
                 <button id="btn_next">Próximo</button> -->
             </div>
         </div>
+    </div>
 
 
-        <script type="text/javascript" src="./js/jquery-3.5.1.slim.min.js"></script>
-        <script type="text/javascript" src="./js/popper.min.js"></script>
-        <script type="text/javascript" src="./js/bootstrap.js"></script>
-        <script src="./owlCarousel/dist/owl.carousel.min.js"></script>
-        <script src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script src="./owlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="./js/script.js"></script>
 
-        <script type="text/javascript">
-            var owl = $(".owl-carousel");
+    <script type="text/javascript">
+        var owl = $(".owl-carousel");
 
-            owl.owlCarousel({
-                items: 6,
-                margin: 8,
-                nav: true,
-                dots: false
-            });
+        owl.owlCarousel({
+            items: 6,
+            margin: 8,
+            nav: true,
+            dots: false
+        });
 
-            /* $("#btn_prev").on('click', function(){
-            owl.trigger('prev.owl.carousel');
-            })
-    
-            $("#btn_next").on('click', function(){
-            owl.trigger('next.owl.carousel');
-            }) */
-        </script>
+        /* $("#btn_prev").on('click', function(){
+        owl.trigger('prev.owl.carousel');
+        })
+
+        $("#btn_next").on('click', function(){
+        owl.trigger('next.owl.carousel');
+        }) */
+    </script>
 </body>
 
 </html>
